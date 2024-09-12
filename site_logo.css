@@ -1,0 +1,126 @@
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Topnav Styles */
+.topnav {
+  background-color: black;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a.split {
+  float: right;
+}
+
+/* Header Styles */
+.header {
+  color: white;
+  background-color: rgb(154, 189, 83);
+  font-size: 25px;
+  padding: 60px;
+  text-align: center;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 0 10px;
+}
+
+.row {
+  margin: 0 -5px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  padding: 16px;
+  text-align: left;
+  background-color: #f1f1f1;
+}
+
+/* Main Body-Left Column Styles */
+.leftcolumn {
+  float: left;
+  width: 75%;
+  padding: 16px;
+}
+
+/* Main-Right Column-Sidenav Styles*/
+.rightcolumn {
+  float: right;
+  width: 25%;
+  padding: 16px;
+}
+
+.sidenav {
+  width: 130px;
+  z-index: 1;
+  left: 10px;
+  background: #eee;
+  width: 200px;
+}
+
+.sidenav a {
+  text-decoration: none;
+  font-size: 17px;
+  color: black;
+  display: block;
+  padding: 15px;
+  text-align: left;
+}
+
+/* Gallery Row */
+
+.galleryTitle {
+  font-size: 35px;
+}
+.columnG {
+  float: left;
+  width: 25%;
+  padding: 70px;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+.rowG:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer Styles */
+.footer {
+  padding: 30px;
+  background-color: #f1f1f1;
+  font-size: 20px;
+}
+
+.footerLeft {
+  float: left;
+}
+
+.footerRight {
+  float: right;
+}
+
+.topLogo {
+  padding: 10px;
+  font-size: 25px;
+}
