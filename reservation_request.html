@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <script type="text/javascript" src="script.js"></script>
+    <title>Reservation Request</title>
+  </head>
+  <!-- Code a statement that moves the focus to the Arrival Date text box. -->
+  <body>
+    <h1>Reservation Request</h1>
+
+    <!-- General Information Form -->
+    <form>
+      <fieldset>
+        <legend>General Information</legend>
+        <label for="arrival_date">Arrival Date: </label>
+        <input type="text" id="arrivalDateText" placeholder="01/01/2000" />
+        <span>*</span><br />
+        <label for="nights">Nights: </label>
+        <input type="text" id="nightsText" />
+        <span>*</span><br />
+        <label>Adults:</label>
+        <select name="adults" id="adults">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+        <br />
+        <label>Children:</label>
+        <select name="children" id="children">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option></select
+        ><br />
+      </fieldset>
+    </form>
+
+    <!-- Preferences Form -->
+    <form>
+      <fieldset>
+        <legend>Preferences</legend>
+        <label>Room type:</label>
+        <input type="radio" class="left" checked />Standard
+        <input type="radio" class="left" />Business
+        <input type="radio" class="left last" />Suite<br />
+        <label>Bed type:</label>
+        <input type="radio" class="left" checked />King&nbsp;&nbsp;&nbsp;
+        <input type="radio" class="left last" />Double Double<br />
+        <input type="checkbox" id="smoking" />Smoking<br />
+      </fieldset>
+    </form>
+
+    <!-- Contact Form -->
+    <form>
+      <fieldset>
+        <!-- <legend>Contact Information</legend>
+        <div>
+          <label for="name">Name: </label>
+          <input type="text" id="nameText" />
+        </div>
+        <div>
+          <label for="email">Email: </label>
+          <input type="text" id="emailText" placeholder="test@localhost.com" />
+        </div>
+        <div>
+          <label for="phone">Phone: </label>
+          <input type="tel" id="phoneText" placeholder="999-999-9999" />
+        </div> -->
+        <legend>Contact Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="nameText" />
+        <span>*</span><br />
+        <label for="email">Email:</label>
+        <input
+          type="text"
+          name="email"
+          id="emailText"
+          placeholder="test@localhost.com"
+        />
+        <span>*</span><br />
+        <label for="phone">Phone:</label>
+        <input type="text" id="phoneText" placeholder="999-999-9999" />
+        <span>*</span><br />
+      </fieldset>
+    </form>
+
+    <!-- Submit Request Button -->
+    <!-- Code an event handler for the submit event of the form. -->
+    <br />
+    <button onclick="submitForm()">Submit Request</button>
+  </body>
+</html>
