@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Calculator</title>
+  </head>
+  <body>
+    <div>
+      <label>Enter amount of change due (0-99):</label>
+      <input type="text" id="userInput" />
+      <button onclick="calculateChange()">Make Change</button>
+    </div>
+
+    <table>
+      <tr>
+        <div>Quarters</div>
+        <input type="text" disabled id="quarters" />
+      </tr>
+      <tr>
+        <div>Dimes</div>
+        <input type="text" disabled id="dimes" />
+      </tr>
+      <tr>
+        <div>Nickels</div>
+        <input type="text " disabled id="nickels" />
+      </tr>
+      <tr>
+        <div>Pennies</div>
+        <input type="text" disabled id="pennies" />
+      </tr>
+    </table>
+  </body>
+  <script>
+    function calculateChange() {
+      enteredUserInput = document.getElementById("userInput").value;
+      convertedUserInput = parseInt(enteredUserInput);
+      console.log("The user entered a value of: " + convertedUserInput);
+      console.log(typeof convertedUserInput);
+
+      if (convertedUserInput <= 0 || convertedUserInput <= 99) {
+        console.log("Good entry by user!");
+      } else {
+        // Validating user input, reset inputs.
+        window.alert("Please enter a number between 0-99.");
+        document.getElementById("userInput").value = "";
+        document.getElementById("quarters").value = "";
+        document.getElementById("quarters").value = "";
+        document.getElementById("quarters").value = "";
+        document.getElementById("quarters").value = "";
+      }
+
+      // object that holds the change in key value pairs
+      // Example: {quarters: 1}
+      var change = {};
+      const coinTypes = ["quarters", "dimes", "nickels", "pennies"];
+      const coinValues = [25, 10, 5, 1];
+
+      // amount is the number of each coin you need to make the correct change.
+      var amount;
+
+      // Loop through arrays using convertedUserInput
+      for (var i = 0; i < coinValues.length; i++) {
+        amount = Math.floor(convertedUserInput / coinValues[i]);
+        if (amount > 0) {
+          change[coinTypes[i]] = amount;
+          convertedUserInput = convertedUserInput % coinValues[i];
+        }
+      }
+      console.log("Look here to see the change object", change);
+
+      // Display the results in their respective inputs.
+      document.getElementById("quarters").value = change.quarters;
+      document.getElementById("dimes").value = change.dimes;
+      document.getElementById("nickels").value = change.nickels;
+      document.getElementById("pennies").value = change.pennies;
+    }
+  </script>
+</html>
