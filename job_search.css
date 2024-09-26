@@ -1,0 +1,151 @@
+/* Global Styles */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Top Page Header */
+.top_page_header {
+  background-color: rgba(53, 4, 144, 0.929);
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  padding: 10px;
+}
+
+/* Top Nav */
+.top_nav {
+  overflow: hidden;
+  background-color: orange;
+}
+
+.top_nav div {
+  float: left;
+  padding-left: 10px;
+  text-align: center;
+  font-weight: 900;
+}
+
+.top_nav a {
+  float: right;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  color: black;
+}
+
+/* Big Header  */
+.big_header {
+  background-color: orange;
+  padding: 80px;
+}
+
+.big_header h1 {
+  text-align: center;
+}
+
+.search {
+  margin: 1rem;
+  text-align: center;
+}
+
+.searchBar {
+  display: inline-block;
+  border: 1px solid grey;
+  padding: 10px;
+  vertical-align: middle;
+  background-color: white;
+  width: 400px;
+  color: grey;
+  border-radius: 5px;
+}
+
+.search_button {
+  background-color: white;
+  padding: 15px;
+  width: 100px;
+  text-align: center;
+  border-radius: 15px;
+  margin: auto;
+}
+
+/* Popular Job Searches Div */
+.popular_job_searches {
+  width: 90%;
+  padding: 50px;
+  background-color: rgb(255, 251, 246);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search_results {
+  border: 2px solid orange;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+.search_border {
+  display: inline-flex;
+}
+
+/* Login/Signup Form */
+.login_signUp {
+  font-size: 25px;
+  font-weight: 560;
+}
+
+.loginColumn label {
+  display: inline-block;
+  width: 150px;
+  text-align: right;
+  padding: 10px;
+}
+
+.loginButton {
+  background-color: orange;
+  border: none;
+  padding: 5px;
+}
+
+.registerColumn label {
+  display: inline-block;
+  width: 150px;
+  text-align: right;
+  padding: 10px;
+}
+
+.registerButton {
+  float: right;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both'
+}
+
+/* Bottom 4 Columns */
+.column2 {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+.underline {
+  color:rgb(176, 125, 29);
+  text-decoration: underline;
+  padding: 5px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  bottom: 0;
+  left: 0;
+}
